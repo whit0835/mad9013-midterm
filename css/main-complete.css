@@ -15,10 +15,11 @@ html{
 /* -- Layout -- */
 .wrapper{
   max-width:35em;
-  width:90%;
+  min-width:20rem;
+  width:95%;
   margin:0 auto;
-  background-color: #e9e9e9;
-  color: #555;
+  background-color: #444;
+  color: #ddd;
 }
 .masthead{
   
@@ -29,25 +30,24 @@ html{
 .main{
   
 }
-.primary .side{
+
+.primary, .side{
   padding-bottom:1rem;
-  padding-left:1rem;
-  padding-right:1rem;
+  padding-left:10px;
+  padding-right:10px;
 }
   
 .footer{
   
 }
-.clearfix:after{
+/*.clearfix:after{
   clear:both;
   display:block;
   content: '.';
   visibility:hidden;
   height:0;
   line-height:0;
-}
-
-
+}*/
 
 
 /* -- Navigation -- */
@@ -76,9 +76,10 @@ html{
 /* -- Content -- */
 .masthead h1{
   font-size: 2rem;
+  text-align: center;
   line-height: 2;
   background: #ddd url("http://lorempixel.com/960/400/cats/") no-repeat 50% 50%;
-  color: #EEE;
+  color: #eee;
   text-shadow: 2px 2px 4px #000;
   padding: 0 1.5rem;
   /* -- make the 2rem padding standard --*/
@@ -89,28 +90,23 @@ html{
   line-height: 2;
   color: #444;
 }
-
 .main h3{
   padding: 0 1.5rem;
   font-size: 1.6rem;
   line-height: 2;
 }
-
 .left{
   float: left;   
   padding: 0 1.5rem 1rem;
 }
-
 .right{
   float: right;  
   padding: 0 1.5rem 1rem;
 }
-
 .main p{
   padding: 0 1.5rem 1rem;
   font-size: 1rem;
 }
-
 .footer p{
   padding: 1rem 1.5rem;
   font-size: 0.8rem;
@@ -118,12 +114,16 @@ html{
   color: #999;
 }
 
+
+/* -- Media Queries -- */
+
 @media all and (min-width:35em) and (max-width:60em){
   
     .wrapper{
       max-width: 60em;
       width :95%;
       margin: 0 auto;
+      color: #ddd;
     }
     
     .mainnav li{
@@ -150,16 +150,25 @@ html{
       margin: 0 auto;
     }
 
+    .masthead h1{
+      background: #ddd url("http://lorempixel.com/1600/400/cats/") no-repeat 50% 50%;
+    }
+    
     .mainnav{
       float: left;
       width: 25%;
-      padding-bottom: 20rem;
-      background: #ddd url("http://lorempixel.com/960/400/cats/") no-repeat 50% 50%;
+      padding-bottom: 40rem;
+      background: #ddd url("http://lorempixel.com/400/800/cats/") no-repeat 50% 50%;
     }
     
     .primary{
       float: left;
       width: 50%;
+    
+      -webkit-column-count: 2; /* Chrome, Safari, Opera */
+      -moz-column-count: 2; /* Firefox */
+      column-count: 2;
+
     }
     
     .side{
