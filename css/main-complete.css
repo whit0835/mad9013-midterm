@@ -86,7 +86,7 @@ html{
 
 /* -- Content -- */
 .masthead h1{
-  font-size: 2rem;
+  font-size: 50px;
   text-align: center;
   line-height: 2;
   background: #ddd url("http://lorempixel.com/960/400/cats/") no-repeat 50% 50%;
