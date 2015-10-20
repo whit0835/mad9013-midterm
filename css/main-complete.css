@@ -16,9 +16,9 @@
   box-sizing:border-box;
 }
 html{
-  font-size: 16px;
+  font-size: `10px;
   line-height:1.75;
-  font-family: Helvetica, Calibri, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -135,6 +135,7 @@ html{
     .wrapper{
       max-width: 60em;
       width :95%;
+      font-size:1.8rem;
       margin: 0 auto;
     }
     
@@ -159,6 +160,7 @@ html{
     .wrapper{
       max-width: 100em;
       width: 95%;
+      font-size:1.8rem;
       margin: 0 auto;
     }
 
