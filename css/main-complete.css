@@ -9,9 +9,12 @@ html{
   line-height:1.75;
   font-family: Helvetica, Calibri, sans-serif;
 }
+
+
+
 /* -- Layout -- */
 .wrapper{
- /*  max-width:960px;*/
+  max-width:35em;
   width:90%;
   margin:0 auto;
   background-color: #e9e9e9;
@@ -26,19 +29,12 @@ html{
 .main{
   
 }
-.primary{
+.primary .side{
   padding-bottom:1rem;
+  padding-left:1rem;
+  padding-right:1rem;
 }
-.secondary{
   
-}
-.tertiary{
-  
-}
-.col-2{
-  /* float:left;
-  width: 50%;*/
-}
 .footer{
   
 }
@@ -51,13 +47,14 @@ html{
   line-height:0;
 }
 
+
+
+
 /* -- Navigation -- */
 .mainnav ul{
   list-style:none;
 }
 .mainnav li{
- /*float:left;
-  width: 25%;*/
 }
 .mainnav a,
 .mainnav a:visited{
@@ -73,6 +70,9 @@ html{
   background-color: #EEE;
   color:#333;
 }
+
+
+
 /* -- Content -- */
 .masthead h1{
   font-size: 2rem;
@@ -89,15 +89,28 @@ html{
   line-height: 2;
   color: #444;
 }
+
 .main h3{
   padding: 0 1.5rem;
   font-size: 1.6rem;
   line-height: 2;
 }
+
+.left{
+  float: left;   
+  padding: 0 1.5rem 1rem;
+}
+
+.right{
+  float: right;  
+  padding: 0 1.5rem 1rem;
+}
+
 .main p{
   padding: 0 1.5rem 1rem;
   font-size: 1rem;
 }
+
 .footer p{
   padding: 1rem 1.5rem;
   font-size: 0.8rem;
@@ -105,34 +118,54 @@ html{
   color: #999;
 }
 
-/* ------media queries ----- */
-
-@media all and (min-width:700px) and (max-width:900px){
+@media all and (min-width:35em) and (max-width:60em){
   
-    .mainnav li {
-      float:left;
-      width:25%;
+    .wrapper{
+      max-width: 60em;
+      width :95%;
+      margin: 0 auto;
     }
-  
-    .primary, .secondary, .tertiary {
-      float:left;
-      width: 33.33333%
     
+    .mainnav li{
+      float: left;
+      width: 25%;
+    }
+    
+    .primary{
+      float: left;
+      width: 63%;
+   }
+    
+    .side{
+      float: left;
+      width: 37%;
    }
 }
+    
+@media all and (min-width:60em){
+  
+    .wrapper{
+      max-width: 100em;
+      width: 95%;
+      margin: 0 auto;
+    }
 
-@media all and (max-width:900px) {
-    .mainnav li {
-      float:left;
-      width:25%;
-    }
-    .masthead h1{
-      line-height: 4rem;
-      background:url(http://lorempixel.com/1800/500/sports) no-rep 50% 50%;
-      min-height:400px;
-    }
-    .primary, .secondary, .tertiary {
+    .mainnav{
       float: left;
-      width: 33.33333%
+      width: 25%;
+      padding-bottom: 20rem;
+      background: #ddd url("http://lorempixel.com/960/400/cats/") no-repeat 50% 50%;
     }
+    
+    .primary{
+      float: left;
+      width: 50%;
+    }
+    
+    .side{
+      float: left;
+      width: 25%  ; 
+    }
+
 }
+
