@@ -9,6 +9,14 @@
 /* color #24A1CC   blue       */
 
 
+/* TO DO:  More media queries - to reduce size of <p> fonts 5-6 times */
+/* TO DO:  Try to get h2 and h3 to dynamically enlarge/reduce */
+/* TO DO:  In mainnav - the font size needs to reduce in lower end of  */
+/*          double colums view to prevent 'Domestic Cats'   */
+/*          from taking up 2 lines   */
+/* TO DO:   Probably more */
+
+
 /* -- Defaults -- */
 *{
   padding:0;
