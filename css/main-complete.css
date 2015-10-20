@@ -1,3 +1,14 @@
+/* colors */
+
+/* color #16657F   dark blue  */
+/* color #79DDFF   light blue */
+
+/* color #2DC9FF   turquoise  */
+
+/* color #53747F   dark grey  */
+/* color #24A1CC   blue       */
+
+
 /* -- Defaults -- */
 *{
   padding:0;
@@ -18,8 +29,8 @@ html{
   min-width:15rem;
   width:95%;
   margin:0 auto;
-  background-color: #444;
-  color: #ddd;
+  background-color: #53747F;    /* color #53747F   dark grey  */
+  /* color: #79DDFF;                color #79DDFF   light blue */
 }
 .masthead{
   
@@ -35,7 +46,7 @@ html{
   padding-bottom:1rem;
   padding-left:10px;
   padding-right:10px;
-}
+  color: #79DDFF;}
   
 .footer{
   
@@ -88,7 +99,7 @@ html{
   padding: 0 1.5rem;
   font-size: 1.8rem;
   line-height: 2;
-  color: #444;
+  color:#EEE;
 }
 .main h3{
   padding: 0 1.5rem;
@@ -125,7 +136,6 @@ html{
       max-width: 60em;
       width :95%;
       margin: 0 auto;
-      color: #ddd;
     }
     
     .mainnav li{
