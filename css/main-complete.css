@@ -135,7 +135,7 @@ html{
     .wrapper{
       max-width: 60em;
       width :95%;
-      font-size:1.8rem;
+      font-size:1.2rem;  /* a little bigger for medium view */
       margin: 0 auto;
     }
     
@@ -160,7 +160,7 @@ html{
     .wrapper{
       max-width: 100em;
       width: 95%;
-      font-size:1.8rem;
+      font-size:1.5rem;  /* a lot bigger for maximum view */
       margin: 0 auto;
     }
 
