@@ -15,7 +15,7 @@ html{
 /* -- Layout -- */
 .wrapper{
   max-width:35em;
-  min-width:20rem;
+  min-width:15rem;
   width:95%;
   margin:0 auto;
   background-color: #444;
@@ -97,11 +97,13 @@ html{
 }
 .left{
   float: left;   
-  padding: 0 1.5rem 1rem;
+  align-content: center;
+  padding: 1rem 1rem 1rem 1rem;
 }
 .right{
-  float: right;  
-  padding: 0 1.5rem 1rem;
+  float: right;
+  align-content: center;
+  padding: 1rem 1rem 1rem 1rem;
 }
 .main p{
   padding: 0 1.5rem 1rem;
